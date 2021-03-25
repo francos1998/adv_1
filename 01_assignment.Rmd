@@ -33,7 +33,8 @@ When you finish the assignment, remove the `#` from the options chunk at the top
 Read the [Quick Intro](https://advanced-ds-in-r.netlify.app/posts/2021-01-28-gitgithub/#quick-intro) section of the Using git and GitHub in R Studio set of Course Materials. Set up Git and GitHub and create a GitHub repo and associated R Project (done for you when you clone the repo) for this homework assignment. Put this file into the project. You should always open the R Project (.Rproj) file when you work with any of the files in the project. 
 
 **Task**: Below, post a link to your GitHub repository.
-[link](https://github.com/francos1998/francosalinas_distill)
+
+[link](https://github.com/francos1998/adv_1)
 
 
 ## Creating a website
