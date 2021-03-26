@@ -73,7 +73,7 @@ Read through and follow along with the [Machine Learning review with an intro to
   _ What are some problems that might exist with the data? You might think about how it was collected and who did the collecting.  
   
   
->The data might not respect the customers given that they were not asked for consent, the data was gathered using software automatically therefore, there was no space for a dialogue between the sample population and the entity gathering the data. 
+>The data might not respect the customers given that they were not asked for consent, the data was gathered using software automatically therefore, there was no space for a dialogue between the sample population and the entity gathering the data. Also, the data only samples two hotels, therefore, the findings are too specific to be generalized to all hotels. 
 
   - If we construct a model, what type of conclusions will be able to draw from it?  
 
@@ -337,7 +337,7 @@ hotels_lasso_final_mod %>%
 ```
 
 
->The most important seem to be reserved room type P, assigned room type I, and deposit type Non.Refund. I am not surprised, I think that reserving a certain type of room could make guests more prompt to cancel the reservation easily relative to other types. Also, being assigned to a room type that the guests don't like sounds like a reasonable preductor for cancelling. Lastly, as we previously mentioned, the refundability of the deposit could affect the decision of a guest to cancel their booking. 
+>The most important seem to be reserved room type P, assigned room type I, and deposit type Non.Refund. I am not surprised, I think that reserving a certain type of room could make guests more prompt to cancel the reservation easily relative to other types. Also, being assigned to a room type that the guests don't like sounds like a reasonable predictor for cancelling. Lastly, as we previously mentioned, the refundability of the deposit could affect the decision of a guest to cancel their booking. 
 
 
 * Use the `last_fit()` function to fit the final model and then apply it to the testing data. Report the metrics from the testing data using the `collet_metrics()` function. How do they compare to the cross-validated metrics?
@@ -368,10 +368,10 @@ preds %>%
 
 ```
 ```{r}
-#Sensitivity:
+#Specificity:
 34372/(34372+3211)
 
-#Specificity:
+#Sensitivity:
 14271/(7839+14271)
 
 ```
